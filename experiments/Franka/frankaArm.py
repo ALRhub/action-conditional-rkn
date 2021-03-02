@@ -156,7 +156,7 @@ def experiment(encoder_dense, decoder_dense, act_decoder_dense, batch_size, num_
     acrkn_infer = Infer(acrkn_model)
 
     ##### Train the model
-    if load == True:
+    if load == False:
         acrkn_learn.train(train_obs, train_act, train_obs_valid, train_targets, train_act_targets, epochs, batch_size, test_obs,
                     test_act, test_obs_valid, test_targets, test_act_targets, val_batch_size=batch_size)
 
